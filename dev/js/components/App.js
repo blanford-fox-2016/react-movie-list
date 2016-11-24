@@ -1,11 +1,19 @@
-import React from 'react';
-require('../../scss/style.scss');
+import React from 'react'
+import MovieList from '../containers/movie-list'
+import MovieDetail from '../containers/movie-detail'
 
-const App = () => (
-    <div>
+
+  function App() {
+    return (
+      <div>
         <h2>Movie List</h2>
+        <MovieList />
         <hr />
-    </div>
-);
+        <MovieDetail />
+        <hr />
+      </div>
+    )
+  }
 
-export default App;
+
+export default App
